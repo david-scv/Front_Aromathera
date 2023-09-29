@@ -26,7 +26,7 @@ function Login() {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://44.208.142.237:3001/api/login', {
+      const response = await axios.post('http://44.202.142.237:3001/api/login', {
         username,
         password,
       });
