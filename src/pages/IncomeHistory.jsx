@@ -25,7 +25,7 @@ function IncomeHistory() {
 
   useEffect(() => {
     // Realizar la solicitud GET al servidor para obtener los egresos
-    fetch('http://44.202.142.237:3001/allIncome')
+    fetch('http://3.87.223.128:3001/allIncome')
       .then((response) => response.json())
       .then((data) => {
         console.log('Datos de ingresos:', data); // Agregar para depuración
@@ -34,7 +34,7 @@ function IncomeHistory() {
       .catch((error) => console.error('Error fetching incomees:', error));
 
     // Realizar la solicitud GET al servidor para obtener todos los clientes
-    fetch('http://44.202.142.237:3001/allClient')
+    fetch('http://3.87.223.128:3001/allClient')
       .then((response) => response.json())
       .then((data) => {
         console.log('Datos de clientes:', data); // Agregar para depuración
@@ -47,7 +47,7 @@ function IncomeHistory() {
       .catch((error) => console.error('Error fetching clients:', error));
 
     // Realizar la solicitud GET al servidor para obtener todos los productos
-    fetch('http://44.202.142.237:3001/allProducts')
+    fetch('http://3.87.223.128:3001/allProducts')
       .then((response) => response.json())
       .then((data) => {
         console.log('Datos de productos:', data); // Agregar para depuración

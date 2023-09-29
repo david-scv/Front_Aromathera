@@ -20,7 +20,7 @@ function Egress() {
 
   // Obtener la lista de clientes desde la ruta especificada
   useEffect(() => {
-    fetch('http://44.202.142.237:3001/allClient')
+    fetch('http://3.87.223.128:3001/allClient')
       .then((response) => response.json())
       .then((data) => {
         console.log('Datos de clientes:', data); // Agrega esta línea
@@ -97,7 +97,7 @@ function Egress() {
     };
 
     // Realizar la solicitud al backend para guardar la información en la base de datos
-    fetch('http://44.202.142.237:3001/createEgress', {
+    fetch('http://3.87.223.128:3001/createEgress', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -128,7 +128,7 @@ function Egress() {
     };
 
     // Realizar la solicitud al backend para actualizar el producto
-    fetch('http://44.202.142.237:3001/updateProduct/' + product.id, {
+    fetch('http://3.87.223.128:3001/updateProduct/' + product.id, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
